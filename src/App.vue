@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <Countdown />
   </div>
 </template>
 
 <script>
+import Countdown from '@/components/Countdown.vue';
+
 export default {
   name: 'app',
-  components: {},
+  components: {
+    Countdown,
+  },
 };
 </script>
 
