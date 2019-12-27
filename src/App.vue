@@ -1,21 +1,20 @@
 <template>
   <div id="app">
     <Countdown />
-
-    <div class="credits">
-      <div>Icons made by <a href="https://www.flaticon.com/authors/pongsakornred" title="pongsakornRed">pongsakornRed</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </div>
+    <Credits />
   </div>
 </template>
 
 <script>
 import Countdown from '@/components/Countdown.vue';
+import Credits from '@/components/Credits.vue';
 import BackgroundImage from '@/assets/background.jpg';
 
 export default {
   name: 'app',
   components: {
     Countdown,
+    Credits,
   },
   mounted() {
     document.body.style.backgroundImage = `url(${BackgroundImage})`;
@@ -43,11 +42,5 @@ body {
 * {
   margin: 0;
   padding: 0;
-}
-
-.credits {
-  margin-top: 1cm;
-  color: grey;
-  font-size: 0.6em;
 }
 </style>
