@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <Countdown />
+
+    <div class="credits">
+      <div>Icons made by <a href="https://www.flaticon.com/authors/pongsakornred" title="pongsakornRed">pongsakornRed</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
   </div>
 </template>
 
@@ -23,5 +27,11 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.credits {
+  margin-top: 1cm;
+  color: grey;
+  font-size: 0.6em;
 }
 </style>
