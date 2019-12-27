@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h2>Time until {{ newYear }}:</h2>
+  <div class="countdown">
+    <h1 class="title">Time until <span class="year">{{ newYear }}</span></h1>
+    <transition name="">
     <div v-if="!completed">
       <CountdownElement v-show="showDays"    :value="remaining.days"    unit="Days"/>
       <CountdownElement v-show="showHours"   :value="remaining.hours"   unit="Hours"/>
@@ -8,6 +9,7 @@
       <CountdownElement v-show="showSeconds" :value="remaining.seconds" unit="Seconds"/>
     </div>
     <div v-else>Happy new year!</div>
+    </transition>
   </div>
 </template>
 
@@ -97,6 +99,21 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.countdown {
+  padding: 2mm;
+  padding-top: 1cm;
+  transition: all 500ms;
+}
 
+.title {
+  font-size: 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1cm;
+
+  .year {
+    font-weight: 700;
+  }
+}
 </style>
