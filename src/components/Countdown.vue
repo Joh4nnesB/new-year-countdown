@@ -2,10 +2,10 @@
   <div class="countdown">
     <h1 class="title">Time until <span class="year">{{ newYear }}</span></h1>
     <div v-if="!completed">
-      <CountdownElement v-show="showDays"    :value="remaining.days"    unit="Days"/>
-      <CountdownElement v-show="showHours"   :value="remaining.hours"   unit="Hours"/>
-      <CountdownElement v-show="showMinutes" :value="remaining.minutes" unit="Minutes"/>
-      <CountdownElement v-show="showSeconds" :value="remaining.seconds" unit="Seconds"/>
+      <CountdownElement :value="remaining.days"    unit="Days"/>
+      <CountdownElement :value="remaining.hours"   unit="Hours"/>
+      <CountdownElement :value="remaining.minutes" unit="Minutes"/>
+      <CountdownElement :value="remaining.seconds" unit="Seconds"/>
     </div>
     <div class="happy" v-else>Happy new year!</div>
   </div>
@@ -36,6 +36,7 @@ export default {
       // return new Date(this.newYear, 0, 1, 0, 0, 0).getTime();
     },
 
+    // @depricated
     showDays() {
       return this.remaining.days > 0;
     },
