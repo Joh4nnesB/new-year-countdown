@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-// Import Raleway font from Google Fonts
+// Import Lato font from Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,700&display=swap');
 
 body {
