@@ -15,7 +15,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .container {
   $container-size: 15vw;
   width: $container-size;
@@ -32,7 +31,7 @@ export default {
 
   background-color: #2980b9;
   margin: 2mm;
-  padding: 2mm;
+  padding: 2vmin;
 
   .value {
     font-size: 8vw;
@@ -49,7 +48,7 @@ export default {
   }
 
   .unit {
-    margin-top: 1.5mm;
+    margin-top: 1vmin;
 
     text-transform: uppercase;
     text-align: center;

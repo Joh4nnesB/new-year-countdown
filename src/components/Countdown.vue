@@ -1,15 +1,13 @@
 <template>
   <div class="countdown">
     <h1 class="title">Time until <span class="year">{{ newYear }}</span></h1>
-    <transition name="">
     <div v-if="!completed">
       <CountdownElement v-show="showDays"    :value="remaining.days"    unit="Days"/>
       <CountdownElement v-show="showHours"   :value="remaining.hours"   unit="Hours"/>
       <CountdownElement v-show="showMinutes" :value="remaining.minutes" unit="Minutes"/>
       <CountdownElement v-show="showSeconds" :value="remaining.seconds" unit="Seconds"/>
     </div>
-    <div v-else>Happy new year!</div>
-    </transition>
+    <div class="happy" v-else>Happy new year!</div>
   </div>
 </template>
 
@@ -34,7 +32,8 @@ export default {
   }),
   computed: {
     newYearDate() {
-      return new Date(this.newYear, 0, 1, 0, 0, 0).getTime();
+      return new Date(new Date().getTime() + time.MINUTE_MS * 0.25).getTime();
+      // return new Date(this.newYear, 0, 1, 0, 0, 0).getTime();
     },
 
     showDays() {
@@ -115,5 +114,9 @@ export default {
   .year {
     font-weight: 700;
   }
+}
+
+.happy {
+  font-size: 7em;
 }
 </style>
