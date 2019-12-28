@@ -32,8 +32,7 @@ export default {
   }),
   computed: {
     newYearDate() {
-      return new Date(new Date().getTime() + time.MINUTE_MS * 0.25).getTime();
-      // return new Date(this.newYear, 0, 1, 0, 0, 0).getTime();
+      return new Date(this.newYear, 0, 1, 0, 0, 0).getTime();
     },
 
     // @depricated
