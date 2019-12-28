@@ -1,24 +1,5 @@
-# new-year-countdown
+# New Year Countdown
 
-## Project setup
-```
-npm install
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7abf2300-a7fe-4fd3-a80e-d9f22f54dff7/deploy-status)](https://app.netlify.com/sites/new-year/deploys)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Check out the life demo on [Netlify](https://new-year.netlify.com/)
